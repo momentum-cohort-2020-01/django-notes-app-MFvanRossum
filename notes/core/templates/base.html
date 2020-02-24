@@ -1,0 +1,8 @@
+<h1>This is my homepage</h1>
+
+{% for note in notes.values %}
+
+<h4>{{note.title}}</h4>
+<p>{{note.body}}</p>
+
+{% endfor %}
