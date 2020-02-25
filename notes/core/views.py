@@ -3,6 +3,6 @@ from django.http import HttpResponse
 
 import data 
 
-def index(request):
+def notes_list(request):
     notes = data.NOTES
-    return render(request, 'base.html', {'notes': notes})
+    return render(request, 'core/notes_list.html', {'notes': notes})
