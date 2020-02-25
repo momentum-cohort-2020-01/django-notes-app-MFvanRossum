@@ -10,7 +10,7 @@
     </thead>
 <tbody>
     {% for note in notes.values %}
-    <tr><td>{{note.title}}</td><td>{{note.body}}</td></tr>
+    <tr><td>{{note.title}}</td><td>{{note.body}}</td><td>{{note.created_at}}</td><td>{{note.updated_at}}</td></tr>
     {% endfor %}
 </tbody>
 
