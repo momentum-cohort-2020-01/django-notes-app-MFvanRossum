@@ -1,4 +1,11 @@
 {% extends 'base.html' %}
 {% block content %}
-<dl><dt>{{note.title}}</dt><dd>{{note.body}}</dd><dd>{{note.created_at}}</dd><dd>{{note.updated_at}}</dd></dl>
+<body class="note-body">
+<h2>{{note.title}}</h2>
+<p>{{note.body}}</p>
+<div class="timestamp">
+<p>{{note.created_at}}</p>
+<p>{{note.updated_at}}</p>
+</div>
+</body>
 {% endblock %}

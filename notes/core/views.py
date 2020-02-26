@@ -9,4 +9,4 @@ def notes_list(request):
 
 def notes_detail(request, pk):
     note = Note.objects.get(pk=pk)
-    return render(request, 'core/notes_detail.html', {'note': note})
+    return render(request, 'core/notes_detail.html', {'note': note, "pk": pk})
