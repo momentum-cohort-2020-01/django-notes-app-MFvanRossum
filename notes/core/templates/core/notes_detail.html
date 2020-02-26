@@ -6,6 +6,7 @@
 <div class="timestamp">
 <p>{{note.created_at}}</p>
 <p>{{note.updated_at}}</p>
+<a href="{% url 'post-edit' pk=note.pk %}">Edit Note</a>
 </div>
 </body>
 {% endblock %}
