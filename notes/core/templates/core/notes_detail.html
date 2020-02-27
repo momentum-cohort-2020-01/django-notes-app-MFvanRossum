@@ -8,6 +8,7 @@
 <p>{{note.created_at}}</p>
 <p>{{note.updated_at}}</p>
 <a class="edit" href="{% url 'post-edit' pk=note.pk %}">Edit Note</a>
+<a class="delete" href="{% url 'post-delete' pk=note.pk %}">Delete</a>
 </div>
 </div>
 </body>
