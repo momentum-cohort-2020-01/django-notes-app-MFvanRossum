@@ -7,9 +7,6 @@
     <link rel="stylesheet" href="{% static 'style.css' %}" />
     {% block title %}<title>Notes</title>{% endblock %}
 </head>
-<div id="page-header" class="page-header">
-    <a href="{% url 'note-new' %}" class="top-menu">Post New Note</a>
-</div>
 <body>
     {% block content %} {% endblock %}
 </body>

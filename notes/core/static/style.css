@@ -9,6 +9,55 @@ body {
     margin-left: 1rem;
 }
 
+.note-body {
+    display: inline-block;
+}
+
+.note {
+    margin: 0.5rem;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.note-title {
+    font-weight: bold;
+    font-size: 18px;
+}
+
 .timestamp {
+    font-size: 10px;
+    margin: 3px;
+}
+
+.page-header {
+    font-size: 15px;
+    font-style: italic;
+    font-weight: bold;
+    margin: 0.5rem;
+    text-decoration: none;
+}
+
+.note-container {
+    margin: 1rem;
+    padding: 1rem;
+    max-width: 500px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.detail-title {
+    font-size: 30px;
+    margin-bottom: 1rem;
+}
+
+.detail-content {
+    margin: 0.5rem;
+    font-size: 18px;
+    font-style: italic;
+}
+
+.edit {
+    margin-top: 1rem;
     font-size: 10px;
 }

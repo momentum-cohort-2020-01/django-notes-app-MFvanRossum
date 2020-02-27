@@ -16,8 +16,7 @@ def note_new(request):
     if request.method == "POST":
         form = NoteForm(request.POST)
         if form.is_valid():
-            note = form.save(commit=False)
-            note.save()
+            form.save()
             return redirect('notes-list')
     else:
         form = NoteForm()
@@ -28,8 +27,7 @@ def note_edit(request, pk):
     if request.method == "POST":
         form = NoteForm(request.POST, instance=note)
         if form.is_valid():
-            note = form.save(commit=False)
-            note.save()
+            form.save()
             return redirect('notes-list')
     else:
         form = NoteForm(instance=note)

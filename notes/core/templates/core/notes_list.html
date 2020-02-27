@@ -1,14 +1,18 @@
 {% extends 'base.html' %}
 {% block content %}
 <h1>MY NOTES</h1>
+<div id="page-header" class="page-header">
+    <a href="{% url 'note-new' %}" class="top-menu">Post New Note</a>
+</div>
+<hr>
 <body class="note-body">
     {% for note in notes %}
     <div class="note" id="{{note.pk}}">
-    <a href="{% url 'notes-detail' note.pk %}">{{note.title}}</a>
+    <a class="note-title" href="{% url 'notes-detail' note.pk %}">{{note.title}}</a>
     <p>{{note.body}}</p>
     <div class="timestamp">
-    <p>{{note.created_at}}</p>
-    <p>{{note.updated_at}}</p>
+    <p>Created: {{note.created_at}}</p>
+    <p>Last updated: {{note.updated_at}}</p>
     </div>
     </div>
     {% endfor %}
